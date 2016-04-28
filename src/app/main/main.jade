@@ -1,0 +1,23 @@
+.container-fluid
+  div.col-md-12
+    h1.text-center  Internet Banking 
+      small Prueba de servicios
+  
+  .col-md-offset-3.col-md-6
+    div.alert.alert-info
+      h5.text-center Swagger: https://s3.amazonaws.com/swagger-sgb/index.html?url=https://bancaplus-demo.synergy-gb.com/api.json
+  
+  .col-md-12
+    hr
+    h3.text-center Servicios
+    .col-md-3
+      .well
+        h4 Login
+        p Usuario: 
+          strong john.doe
+        p Contraseña: 
+          strong any
+        a.btn.btn-block(ng-click="main.login()" ng-class="{'btn-success': main.authAction == 'Login', 'btn-danger': main.authAction != 'Login'}" login) 
+          | {{main.authAction}}
+          
+      
